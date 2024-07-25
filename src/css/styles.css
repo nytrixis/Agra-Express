@@ -2090,6 +2090,132 @@ footer {
   margin-left: 8px;
 }
 
+.banner-section {
+  background-color: #d43242;
+  color: white;
+  padding: 4rem 0;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.banner-content__text h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.banner-content__text p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.banner-content__features {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.feature span {
+  font-size: 1.2rem;
+}
+
+
+.testimonials-section {
+  background-color: #f8f9fa;
+  padding: 5rem 0;
+}
+
+.testimonials-content__title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.testimonials-content__title h4 {
+  color: #d43242;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.testimonials-content__title h2 {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+}
+
+.testimonials-content__title p {
+  font-size: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card__content {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.quote-icon {
+  color: #d43242;
+  opacity: 0.2;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 40px;
+  height: 40px;
+}
+
+.testimonial-card__content p {
+  position: relative;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  z-index: 1;
+}
+
+.testimonial-card__author {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-card__author img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.testimonial-card__author h4 {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+.testimonial-card__author p {
+  font-size: 1.5rem;
+  color: #555;
+}
+
 
 
 /*# sourceMappingURL=styles.css.map */

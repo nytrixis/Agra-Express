@@ -24,10 +24,9 @@ function Faq() {
           <div className="faq-content">
             <div className="faq-content__title">
               <h5>FAQ</h5>
-              <h2>Frequently Asked Questions</h2>
+              <h2 style={{ color: "#d43242" }}>Frequently Asked Questions</h2>
               <p>
-                Frequently Asked Questions About the Car Rental Booking Process
-                on Our Website: Answers to Common Concerns and Inquiries.
+                Get answers to common questions about Agra Express car rental services and booking process.
               </p>
             </div>
 
@@ -38,7 +37,7 @@ function Faq() {
                   onClick={() => openQ("q1")}
                   className={`faq-box__question  ${getClassQuestion("q1")}`}
                 >
-                  <p>1. What is special about comparing rental car deals?</p>
+                  <p>1. How do I find such low rental car prices?</p>
                   <IconChevronDown />
                 </div>
                 <div
@@ -46,13 +45,7 @@ function Faq() {
                   onClick={() => openQ("q1")}
                   className={`faq-box__answer ${getClassAnswer("q1")}`}
                 >
-                  Comparing rental car deals is important as it helps find the
-                  best deal that fits your budget and requirements, ensuring you
-                  get the most value for your money. By comparing various
-                  options, you can find deals that offer lower prices,
-                  additional services, or better car models. You can find car
-                  rental deals by researching online and comparing prices from
-                  different rental companies.
+                  Book in advance: Booking your rental car ahead of time can often result in lower prices. Compare prices from multiple companies: Use websites like Kayak, Expedia, or Travelocity to compare prices from multiple rental car companies. Look for discount codes and coupons: Search for discount codes and coupons that you can use to lower the rental price. Renting from an off-airport location can sometimes result in lower prices.
                 </div>
               </div>
               <div className="faq-box">
@@ -61,21 +54,15 @@ function Faq() {
                   onClick={() => openQ("q2")}
                   className={`faq-box__question ${getClassQuestion("q2")}`}
                 >
-                  <p>2. How do I find the car rental deals?</p>
-                  <IconChevronDown />{" "}
+                  <p>2. Is insurance included in the rental price?</p>
+                  <IconChevronDown />
                 </div>
                 <div
                   id="q2"
                   onClick={() => openQ("q2")}
                   className={`faq-box__answer ${getClassAnswer("q2")}`}
                 >
-                  You can find car rental deals by researching online and
-                  comparing prices from different rental companies. Websites
-                  such as Expedia, Kayak, and Travelocity allow you to compare
-                  prices and view available rental options. It is also
-                  recommended to sign up for email newsletters and follow rental
-                  car companies on social media to be informed of any special
-                  deals or promotions.
+                  Basic insurance coverage is included in our standard rental prices. However, we offer additional insurance options for enhanced protection. We recommend reviewing the insurance details during the booking process to choose the coverage that best suits your needs.
                 </div>
               </div>
               <div className="faq-box">
@@ -84,7 +71,7 @@ function Faq() {
                   onClick={() => openQ("q3")}
                   className={`faq-box__question ${getClassQuestion("q3")}`}
                 >
-                  <p>3. How do I find such low rental car prices?</p>
+                  <p>3. What is Agra Express's cancellation policy?</p>
                   <IconChevronDown />
                 </div>
                 <div
@@ -92,14 +79,7 @@ function Faq() {
                   onClick={() => openQ("q3")}
                   className={`faq-box__answer ${getClassAnswer("q3")}`}
                 >
-                  Book in advance: Booking your rental car ahead of time can
-                  often result in lower prices. Compare prices from multiple
-                  companies: Use websites like Kayak, Expedia, or Travelocity to
-                  compare prices from multiple rental car companies. Look for
-                  discount codes and coupons: Search for discount codes and
-                  coupons that you can use to lower the rental price. Renting
-                  from an off-airport location can sometimes result in lower
-                  prices.
+                  Agra Express offers free cancellation for most bookings up to 48 hours before the scheduled pickup time. For cancellations made within 48 hours of the pickup time, a fee may apply. Please refer to your specific booking terms for detailed cancellation information.
                 </div>
               </div>
             </div>

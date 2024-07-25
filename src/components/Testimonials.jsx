@@ -5,65 +5,58 @@ import Img3 from "../images/testimonials/pfp2.jpg";
 
 function Testimonials() {
   return (
-    <>
-      <section className="testimonials-section">
-        <div className="container">
-          <div className="testimonials-content">
-            <div className="testimonials-content__title">
-              <h4>Reviewed by People</h4>
-              <h2>Client's Testimonials</h2>
-              <p>
-                Discover the positive impact we've made on the our clients by
-                reading through their testimonials. Our clients have experienced
-                our service and results, and they're eager to share their
-                positive experiences with you.
-              </p>
-            </div>
+    <section className="testimonials-section">
+      <div className="container">
+        <div className="testimonials-content">
+          <div className="testimonials-content__title">
+            <h4>Client Experiences</h4>
+            <h2>What Our Customers Say</h2>
+            <p>
+              Discover the impact of our service through the words of our valued clients. 
+              Their experiences reflect our commitment to excellence and customer satisfaction.
+            </p>
+          </div>
 
-            <div className="all-testimonials">
-              <div className="all-testimonials__box">
-                <span className="quotes-icon">
-                  <IconQuote width={60} height={60} />
-                </span>
+          <div className="testimonials-grid">
+            <div className="testimonial-card">
+              <div className="testimonial-card__content">
+                <IconQuote className="quote-icon" />
                 <p>
-                  "We rented a car from this website and had an amazing
-                  experience! The booking was easy and the rental rates were
-                  very affordable. "
+                  "Agra Express exceeded all my expectations. The car was immaculate, 
+                  the booking process was smooth, and their customer service was top-notch. 
+                  I'll definitely be using their services again!"
                 </p>
-                <div className="all-testimonials__box__name">
-                  <div className="all-testimonials__box__name__profile">
-                    <img src={Img2} alt="user_img" />
-                    <span>
-                      <h4>Parry Hotter</h4>
-                      <p>Belgrade</p>
-                    </span>
-                  </div>
+              </div>
+              <div className="testimonial-card__author">
+                <img src={Img2} alt="Parry Hotter" />
+                <div>
+                  <h4>Parry Hotter</h4>
+                  <p>Belgrade</p>
                 </div>
               </div>
+            </div>
 
-              <div className="all-testimonials__box box-2">
-                <span className="quotes-icon">
-                  <IconQuote width={60} height={60} />
-                </span>
+            <div className="testimonial-card">
+              <div className="testimonial-card__content">
+                <IconQuote className="quote-icon" />
                 <p>
-                  "The car was in great condition and made our trip even better.
-                  Highly recommend for this car rental website!"
+                  "I was impressed by the range of vehicles Agra Express offers. 
+                  The car I rented was perfect for my trip, and the staff were incredibly 
+                  helpful throughout the entire process. A five-star experience!"
                 </p>
-                <div className="all-testimonials__box__name">
-                  <div className="all-testimonials__box__name__profile">
-                    <img src={Img3} alt="user_img" />
-                    <span>
-                      <h4>Ron Rizzly</h4>
-                      <p>Novi Sad</p>
-                    </span>
-                  </div>
+              </div>
+              <div className="testimonial-card__author">
+                <img src={Img3} alt="Ron Rizzly" />
+                <div>
+                  <h4>Ron Rizzly</h4>
+                  <p>Novi Sad</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
 
