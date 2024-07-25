@@ -6,7 +6,7 @@ import HeroCar2 from "../images/hero/1.png";
 import HeroCar3 from "../images/hero/2.png";
 import HeroCar4 from "../images/hero/3.png";
 import HeroCar5 from "../images/hero/4.png";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { IconChevronRight, IconChevronLeft, IconCircleCheck } from "@tabler/icons-react";
 
 
@@ -15,7 +15,7 @@ function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const carImages = [HeroCar1, HeroCar2, HeroCar3, HeroCar4, HeroCar5];
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setCurrentSlide((prev) => {
       const next = (prev + 1) % carImages.length;
       document.querySelector(`.hero-content__car-img:nth-child(${prev + 1})`).classList.add('prev');
@@ -24,7 +24,7 @@ function Hero() {
       }, 500);
       return next;
     });
-  };
+  }, [carImages]);
   
   const prevSlide = () => {
     setCurrentSlide((prev) => {
@@ -54,7 +54,7 @@ function Hero() {
   useEffect(() => {
     const slideInterval = setInterval(nextSlide, 5000);
     return () => clearInterval(slideInterval);
-  }, []);
+  }, [nextSlide]);
   
 
   useEffect(() => {
@@ -88,12 +88,12 @@ function Hero() {
               <div className="hero-content__text__btns">
                 <Link
                   onClick={bookBtn}
-                  className="hero-content__text__btns__book-ride"
+                  className="hero-content__text__btns__book-ride btn-align"
                   to="/"
                 >
                   Book Ride &nbsp; <IconCircleCheck />
                 </Link>
-                <Link className="hero-content__text__btns__learn-more" to="/">
+                <Link className="hero-content__text__btns__learn-more btn-align" to="/">
                   Discover &nbsp; <IconChevronRight />
                 </Link>
               </div>

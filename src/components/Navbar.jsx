@@ -76,13 +76,13 @@ function Navbar() {
             <li>
               {" "}
               <Link className="models-link" to="/models">
-                Vehicle Models
+                Car models
               </Link>
             </li>
             <li>
               {" "}
-              <Link className="testi-link" to="/testimonials">
-                Testimonials
+              <Link className="testi-link" to="/models">
+                Coach models
               </Link>
             </li>
             <li>

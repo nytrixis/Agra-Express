@@ -1,51 +1,44 @@
 import React from "react";
-import SelectCar from "../images/plan/icon1.png";
-import Contact from "../images/plan/icon2.png";
-import Drive from "../images/plan/icon3.png";
+import { IconCar, IconHeadset, IconMapPin } from "@tabler/icons-react";
 
 function PlanTrip() {
   return (
-    <>
-      <section className="plan-section">
-        <div className="container">
-          <div className="plan-container">
-            <div className="plan-container__title">
-              <h3>Plan your trip now</h3>
-              <h2>Quick & easy car rental</h2>
+    <section className="plan-section">
+      <div className="container">
+        <div className="plan-container">
+          <div className="plan-container__title">
+            <h3>Your Journey Starts Here</h3>
+            <h2 style={{ color: "#d43242" }}>Effortless Car Rental in 3 Simple Steps</h2>
+          </div>
+
+          <div className="plan-container__boxes">
+            <div className="plan-container__boxes__box">
+              <IconCar size={48} stroke={2} color="#d43242"/>
+              <h3>Choose Your Ride</h3>
+              <p>
+                Explore our diverse fleet and find the perfect vehicle for your adventure. From compact cars to luxury SUVs, we've got you covered.
+              </p>
             </div>
 
-            <div className="plan-container__boxes">
-              <div className="plan-container__boxes__box">
-                <img src={SelectCar} alt="icon_img" />
-                <h3>Select Car</h3>
-                <p>
-                  We offers a big range of vehicles for all your driving needs.
-                  We have the perfect car to meet your needs
-                </p>
-              </div>
+            <div className="plan-container__boxes__box">
+              <IconHeadset size={48} stroke={2} color="#d43242" />
+              <h3>Connect with Us</h3>
+              <p>
+                Our friendly experts are ready to assist you 24/7. Get personalized advice and answers to all your questions for a smooth booking experience.
+              </p>
+            </div>
 
-              <div className="plan-container__boxes__box">
-                <img src={Contact} alt="icon_img" />
-                <h3>Contact Operator</h3>
-                <p>
-                  Our knowledgeable and friendly operators are always ready to
-                  help with any questions or concerns
-                </p>
-              </div>
-
-              <div className="plan-container__boxes__box">
-                <img src={Drive} alt="icon_img" />
-                <h3>Let's Drive</h3>
-                <p>
-                  Whether you're hitting the open road, we've got you covered
-                  with our wide range of cars
-                </p>
-              </div>
+            <div className="plan-container__boxes__box">
+              <IconMapPin size={48} stroke={2} color="#d43242" />
+              <h3>Hit the Road</h3>
+              <p>
+                Buckle up and embark on your journey! With our top-notch vehicles and support, your trip is bound to be unforgettable.
+              </p>
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
 

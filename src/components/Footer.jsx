@@ -15,18 +15,19 @@ function Footer() {
                 Customer Satisfaction and Safety First.
               </li>
               <li>
-                <a href="tel:123456789">
-                  <IconPhoneCall /> &nbsp; (123) -456-789
-                </a>
+              <a href="tel:123456789" className="contact-item">
+                <IconPhoneCall /> &nbsp; 9540351000, 8766373398, 011 49846766
+              </a>
+
               </li>
 
               <li>
                 <a
                   href="mailto: 
-                carrental@gmail.com"
+                info@agraexpress.com" className="contact-item"
                 >
                   <IconMail />
-                  &nbsp; carrental@gmail.com
+                  &nbsp; info@agraexpress.com
                 </a>
               </li>
 
@@ -34,12 +35,12 @@ function Footer() {
             </ul>
 
             <ul className="footer-content__2">
-              <li>Company</li>
+              <li>Links</li>
               <li>
-                <a href="#home">New York</a>
+                <a href="#home">Home</a>
               </li>
               <li>
-                <a href="#home">Careers</a>
+                <a href="#about">About</a>
               </li>
               <li>
                 <a href="#home">Mobile</a>
@@ -54,15 +55,14 @@ function Footer() {
 
             <ul className="footer-content__2">
               <li>Working Hours</li>
-              <li>Mon - Fri: 9:00AM - 9:00PM</li>
-              <li>Sat: 9:00AM - 19:00PM</li>
+              <li>Mon -Sat: 9:00AM - 9:00PM</li>
               <li>Sun: Closed</li>
             </ul>
 
             <ul className="footer-content__2">
               <li>Subscription</li>
               <li>
-                <p>Subscribe your Email address for latest news & updates.</p>
+                <p>Enter your email address for personalized newsletters and updates.</p>
               </li>
               <li>
                 <input type="email" placeholder="Enter Email Address"></input>
