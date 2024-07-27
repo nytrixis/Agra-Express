@@ -18,9 +18,9 @@ function Models() {
         <div className="container">
           <div className="models-header">
             <h1 className="models-title">Our Rental Fleet</h1>
-            <p className="models-subtitle">Choose from a variety of our amazing Car Models</p>
+            <p className="models-subtitle">Choose from a variety of our amazing Coach Models</p>
           </div>
-          <h2 className="models-category">Economy Cars</h2>
+          <h2 className="models-category">Mini Vans</h2>
           <div className="models-div">
             <div className="models-div__box">
               <div className="models-div__box__img">
@@ -281,7 +281,7 @@ function Models() {
             </div>
           </div>
 
-          <h2 className="models-category">Luxury & Executive Cars</h2>
+          <h2 className="models-category">Mini Coaches</h2>
           <div className="models-div">
             <div className="models-div__box">
               <div className="models-div__box__img">
@@ -542,7 +542,7 @@ function Models() {
             </div>
           </div>
 
-          <h2 className="models-category">Top Premium Cars</h2>
+          <h2 className="models-category">Large Coaches</h2>
           <div className="models-div">
             <div className="models-div__box">
               <div className="models-div__box__img">
@@ -803,7 +803,7 @@ function Models() {
             </div>
           </div>
 
-          <h2 className="models-category">SUV / MUV Cars</h2>
+          <h2 className="models-category">Luxury Vans</h2>
           <div className="models-div">
             <div className="models-div__box">
               <div className="models-div__box__img">

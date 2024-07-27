@@ -32,17 +32,12 @@ function Navbar() {
             </li>
             <li>
               <Link onClick={openNav} to="/models">
-                Models
+                Cars
               </Link>
             </li>
             <li>
-              <Link onClick={openNav} to="/testimonials">
-                Testimonials
-              </Link>
-            </li>
-            <li>
-              <Link onClick={openNav} to="/team">
-                Our Team
+              <Link onClick={openNav} to="/coaches">
+                Coaches
               </Link>
             </li>
             <li>
@@ -81,14 +76,8 @@ function Navbar() {
             </li>
             <li>
               {" "}
-              <Link className="testi-link" to="/models">
+              <Link className="testi-link" to="/coaches">
                 Coach models
-              </Link>
-            </li>
-            <li>
-              {" "}
-              <Link className="team-link" to="/team">
-                Our Team
               </Link>
             </li>
             <li>

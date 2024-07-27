@@ -2218,4 +2218,141 @@ footer {
 
 
 
+
+.models-container {
+  padding-top: 150px; /* Adjust this value based on your navbar height */
+}
+
+.models-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.models-title {
+  font-size: 3.5rem;
+  color: #d43242;
+  margin-bottom: 15px;
+}
+
+.models-subtitle {
+  font-size: 1.8rem;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.models-category {
+  font-size: 3rem;
+  text-align: lefy;
+  padding-left: 90px;
+  transition: color 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.models-category::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 90px;
+  background-color: #d43242;
+  transition: width 0.3s ease;
+}
+
+.models-category:hover{
+  color: #d43242;
+}
+
+.models-category:hover::after{
+  width: calc(100% - 70px);
+}
+
+.about-page{
+  padding-top: 120px;
+}
+
+.about-main__text h2 {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+  color: #d43242;
+}
+
+.about-main__text p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #706f7b;
+  line-height: 1.8;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+.about-stats__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-stats__box img {
+  width: 70px;
+  margin-bottom: 1rem;
+}
+
+.about-stats__box h4 {
+  font-size: 3.5rem;
+  color: #d43242;
+  margin-bottom: 0.5rem;
+}
+
+.about-stats__box p {
+  font-size: 1.2rem;
+  color: #706f7b;
+}
+
+@media (max-width: 768px) {
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-fleet {
+  padding-bottom: 50px;
+}
+
+.about-fleet h3 {
+  font-size: 3.5rem;
+  color: #d43242;
+  margin-bottom: 2.5rem;
+  margin-left: 180px;
+}
+
+.about-fleet p{
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #706f7b;
+  font-weight: 500;
+  margin-left: 180px;
+}
+
+button {
+  color: #d43242;
+}
+
+.contact-page {
+  padding-top: 120px;
+}
+
+.contact-div__text h2 {
+  color: #d43242;
+}
 /*# sourceMappingURL=styles.css.map */
