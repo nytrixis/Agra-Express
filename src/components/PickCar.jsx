@@ -90,6 +90,26 @@ function PickCar() {
                 >
                   VW Passat CC
                 </button>
+                <button
+                  className={`${coloringButton("btn7")}`}
+                  id="btn7"
+                  onClick={() => {
+                    setActive("SeventhCar");
+                    btnID("btn7");
+                  }}
+                >
+                  Volvo B11R
+                </button>
+                <button
+                  className={`${coloringButton("btn8")}`}
+                  id="btn8"
+                  onClick={() => {
+                    setActive("EighthCar");
+                    btnID("btn8");
+                  }}
+                >
+                  Tata Marcopolo
+                </button>
               </div>
 
               {active === "FirstCar" && <CarBox data={CAR_DATA} carID={0} />}
@@ -98,6 +118,8 @@ function PickCar() {
               {active === "FourthCar" && <CarBox data={CAR_DATA} carID={3} />}
               {active === "FifthCar" && <CarBox data={CAR_DATA} carID={4} />}
               {active === "SixthCar" && <CarBox data={CAR_DATA} carID={5} />}
+              {active === "SeventhCar" && <CarBox data={CAR_DATA} carID={6} />}
+              {active === "EighthCar" && <CarBox data={CAR_DATA} carID={7} />}
             </div>
           </div>
         </div>

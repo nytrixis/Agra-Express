@@ -28,10 +28,9 @@ function Testimonials() {
                 </p>
               </div>
               <div className="testimonial-card__author">
-                <img src={Img2} alt="Parry Hotter" />
                 <div>
-                  <h4>Parry Hotter</h4>
-                  <p>Belgrade</p>
+                  <h4>Ravi Dubey</h4>
+                  <p>New Delhi</p>
                 </div>
               </div>
             </div>
@@ -46,10 +45,9 @@ function Testimonials() {
                 </p>
               </div>
               <div className="testimonial-card__author">
-                <img src={Img3} alt="Ron Rizzly" />
                 <div>
-                  <h4>Ron Rizzly</h4>
-                  <p>Novi Sad</p>
+                  <h4>Devesh Pandey</h4>
+                  <p>Uttarakhand</p>
                 </div>
               </div>
             </div>

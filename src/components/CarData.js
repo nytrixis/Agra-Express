@@ -4,6 +4,8 @@ import Toyota from "../images/cars-big/toyotacamry.jpg";
 import Bmw320 from "../images/cars-big/bmw320.jpg";
 import Benz from "../images/cars-big/benz.jpg";
 import Passat from "../images/cars-big/passatcc.jpg";
+import Volvo from "../images/cars-big/volvo.png";
+import Tata from "../images/cars-big/tata.png";
 
 export const CAR_DATA = [
   [
@@ -88,6 +90,36 @@ export const CAR_DATA = [
       air: "Yes",
       transmission: "Automatic",
       fuel: "Gasoline",
+    },
+  ],
+  [
+    {
+      name: "Volvo B11R",
+      price: "100",
+      img: Volvo,
+      model: "B11R",
+      mark: "Volvo",
+      year: "2020",
+      doors: "2",
+      air: "Yes",
+      transmission: "Automatic",
+      fuel: "Diesel",
+      capacity: "45 seats",
+    },
+  ],
+  [
+    {
+      name: "Tata Marcopolo",
+      price: "90",
+      img: Tata,
+      model: "Marcopolo",
+      mark: "Tata",
+      year: "2019",
+      doors: "2",
+      air: "Yes",
+      transmission: "Manual",
+      fuel: "Diesel",
+      capacity: "40 seats",
     },
   ],
 ];

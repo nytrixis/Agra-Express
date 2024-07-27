@@ -1,7 +1,6 @@
 import React from "react";
 import { IconMail, IconMailOpened, IconPhone } from "@tabler/icons-react";
 import Footer from "../components/Footer";
-import HeroPages from "../components/HeroPages";
 import { IconLocation } from "@tabler/icons-react";
 
 function Contact() {
