@@ -2355,4 +2355,88 @@ button {
 .contact-div__text h2 {
   color: #d43242;
 }
+
+.loading-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.loading-logo{
+  width: 100%;
+  max-width: 800px;
+}
+
+.loading-logo text {
+  font-size: 54px;
+  font-weight: bold;
+  stroke: #d43242;
+  fill: transparent;
+  stroke-width: 2px;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: stroke 2s linear forwards, fill 1s ease-in forwards 2s;
+}
+
+@keyframes stroke{
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #d43242;
+  }
+}
+
+.loadingp {
+  margin-top: 20px;
+  color: #706f7b;
+  font-size: 30px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards 1.8s;
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.loading-spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #d43242;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-page h2 {
+  margin-top: 20px;
+  color: #d43242;
+  font-size: 4rem;
+}
+
+/* .loadingp p {
+  margin-top: 10px;
+  color: #706f7b;
+  font-size: 10px;
+} */
+
 /*# sourceMappingURL=styles.css.map */

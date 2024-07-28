@@ -10,9 +10,7 @@ function Download() {
           <div className="download-text">
             <h2>Download our app to get most out of it</h2>
             <p>
-              Thrown shy denote ten ladies though ask saw. Or by to he going
-              think order event music. Incommode so intention defective at
-              convinced. Led income months itself and houses you.
+            Experience seamless car rentals with Agra Express at your fingertips. Our user-friendly app allows you to browse our fleet, make reservations, and manage your bookings with ease. Stay updated on exclusive offers and enjoy a hassle-free journey across India.
             </p>
             <div className="download-text__btns">
               <img alt="download_img" src={Img2} />
