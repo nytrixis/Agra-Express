@@ -1,14 +1,23 @@
 import React from "react";
 import Footer from "../components/Footer";
 import HeroPages from "../components/HeroPages";
-import CarImg1 from "../images/cars-big/audi-box.png";
-import CarImg2 from "../images/cars-big/golf6-box.png";
-import CarImg3 from "../images/cars-big/toyota-box.png";
-import CarImg4 from "../images/cars-big/bmw-box.png";
-import CarImg5 from "../images/cars-big/benz-box.png";
-import CarImg6 from "../images/cars-big/passat-box.png";
+import CarImg1 from "../images/cars-big/mvolkswagencrafter.jpg";
+import CarImg2 from "../images/cars-big/mtoyotahiAce.jpg";
+import CarImg3 from "../images/cars-big/mmercedezbenzsprinter.jpg";
+import CarImg4 from "../images/cars-big/mmercedezbenzsprinter1.jpg";
+import CarImg5 from "../images/cars-big/mnissanurvan.jpg";
+import CarImg6 from "../images/cars-big/mmercedezbenzsprinter2.jpg";
+import CarImg7 from "../images/cars-big/mmercedezbenzsprinter3.jpg";
+import CarImg8 from "../images/cars-big/mvolvocoach.jpg";
+import CarImg9 from "../images/cars-big/mkinglongcoach.jpg";
+import CarImg10 from "../images/cars-big/ltoyotacoaster.jpg";
+import CarImg11 from "../images/cars-big/minicoach.jpg";
+import CarImg12 from "../images/cars-big/lbharatbenztouristcoach.jpg";
+import CarImg13 from "../images/cars-big/eyutong.jpg";
+import CarImg14 from "../images/cars-big/etatastarbusultra.jpg";
+import CarImg15 from "../images/cars-big/egoldendragon.jpg";
 import { Link } from "react-router-dom";
-import { IconCar, IconPhone, IconStar } from "@tabler/icons-react";
+import { IconCar, IconPhone, IconStar, IconUsers } from "@tabler/icons-react";
 
 function Models() {
   return (
@@ -28,29 +37,28 @@ function Models() {
                 <div className="models-div__box__descr">
                   <div className="models-div__box__descr__name-price">
                     <div className="models-div__box__descr__name-price__name">
-                      <p>Audi A1</p>
+                      <p>Volkswagen</p>
                       <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
                         <IconStar width={15} height={15} />
                       </span>
                     </div>
                     <div className="models-div__box__descr__name-price__price">
-                      <h4>$45</h4>
-                      <p>per day</p>
+                      
                     </div>
                   </div>
                   <div className="models-div__box__descr__name-price__details">
                     <span>
-                      <IconCar /> &nbsp; Audi
+                      Crafter
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
+                      15-20 &nbsp; <IconUsers />
                     </span>
                     <span>
-                      <IconCar /> &nbsp; Manual
+                      Manual
                     </span>
                     <span style={{ textAlign: "right" }}>
                       Diesel &nbsp; <IconCar />
@@ -71,29 +79,28 @@ function Models() {
                 <div className="models-div__box__descr">
                   <div className="models-div__box__descr__name-price">
                     <div className="models-div__box__descr__name-price__name">
-                      <p>Golf 6</p>
+                      <p>Toyota</p>
                       <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
                       </span>
                     </div>
                     <div className="models-div__box__descr__name-price__price">
-                      <h4>$37</h4>
-                      <p>per day</p>
+                      
                     </div>
                   </div>
                   <div className="models-div__box__descr__name-price__details">
                     <span>
-                      <IconCar /> &nbsp; VW
+                      HiAce
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
+                      10-14 &nbsp; <IconUsers />
                     </span>
                     <span>
-                      <IconCar /> &nbsp; Manual
+                      Manual
                     </span>
                     <span style={{ textAlign: "right" }}>
                       Diesel &nbsp; <IconCar />
@@ -114,29 +121,28 @@ function Models() {
                 <div className="models-div__box__descr">
                   <div className="models-div__box__descr__name-price">
                     <div className="models-div__box__descr__name-price__name">
-                      <p>Toyota</p>
+                      <p>Mercedez Benz</p>
                       <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
                       </span>
                     </div>
                     <div className="models-div__box__descr__name-price__price">
-                      <h4>$30</h4>
-                      <p>per day</p>
+                      
                     </div>
                   </div>
                   <div className="models-div__box__descr__name-price__details">
                     <span>
-                      <IconCar /> &nbsp; Camry
+                      Sprinter
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
+                      15-20 &nbsp; <IconUsers />
                     </span>
                     <span>
-                      <IconCar /> &nbsp; Manual
+                      Manual
                     </span>
                     <span style={{ textAlign: "right" }}>
                       Diesel &nbsp; <IconCar />
@@ -157,29 +163,28 @@ function Models() {
                 <div className="models-div__box__descr">
                   <div className="models-div__box__descr__name-price">
                     <div className="models-div__box__descr__name-price__name">
-                      <p>BMW 320</p>
+                      <p>Mercedez Benz</p>
                       <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
                         <IconStar width={15} height={15} />
                       </span>
                     </div>
                     <div className="models-div__box__descr__name-price__price">
-                      <h4>$35</h4>
-                      <p>per day</p>
+                      
                     </div>
                   </div>
                   <div className="models-div__box__descr__name-price__details">
                     <span>
-                      <IconCar /> &nbsp; ModernLine
+                      Experience Explorers
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
+                      15-20 &nbsp; <IconUsers />
                     </span>
                     <span>
-                      <IconCar /> &nbsp; Manual
+                      Manual
                     </span>
                     <span style={{ textAlign: "right" }}>
                       Diesel &nbsp; <IconCar />
@@ -200,29 +205,28 @@ function Models() {
                 <div className="models-div__box__descr">
                   <div className="models-div__box__descr__name-price">
                     <div className="models-div__box__descr__name-price__name">
-                      <p>Mercedes</p>
+                      <p>Nissan</p>
                       <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
                       </span>
                     </div>
                     <div className="models-div__box__descr__name-price__price">
-                      <h4>$50</h4>
-                      <p>per day</p>
+                      
                     </div>
                   </div>
                   <div className="models-div__box__descr__name-price__details">
                     <span>
-                      <IconCar /> &nbsp; Benz GLK
+                      Urvan
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
+                      12-15 &nbsp; <IconUsers />
                     </span>
                     <span>
-                      <IconCar /> &nbsp; Manual
+                      Manual
                     </span>
                     <span style={{ textAlign: "right" }}>
                       Diesel &nbsp; <IconCar />
@@ -243,29 +247,28 @@ function Models() {
                 <div className="models-div__box__descr">
                   <div className="models-div__box__descr__name-price">
                     <div className="models-div__box__descr__name-price__name">
-                      <p>VW Passat</p>
+                      <p>Mercedez Benz</p>
                       <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
                         <IconStar width={15} height={15} />
                       </span>
                     </div>
                     <div className="models-div__box__descr__name-price__price">
-                      <h4>$25</h4>
-                      <p>per day</p>
+                      
                     </div>
                   </div>
                   <div className="models-div__box__descr__name-price__details">
                     <span>
-                      <IconCar /> &nbsp; ComfortLine
+                      S Class
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
+                      9-10 &nbsp; <IconUsers />
                     </span>
                     <span>
-                      <IconCar /> &nbsp; Manual
+                      Automatic
                     </span>
                     <span style={{ textAlign: "right" }}>
                       Diesel &nbsp; <IconCar />
@@ -285,33 +288,32 @@ function Models() {
           <div className="models-div">
             <div className="models-div__box">
               <div className="models-div__box__img">
-                <img src={CarImg1} alt="car_img" />
+                <img src={CarImg7} alt="car_img" />
                 <div className="models-div__box__descr">
                   <div className="models-div__box__descr__name-price">
                     <div className="models-div__box__descr__name-price__name">
-                      <p>Audi A1</p>
+                      <p>Mercedez Benz</p>
                       <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
                         <IconStar width={15} height={15} />
                       </span>
                     </div>
                     <div className="models-div__box__descr__name-price__price">
-                      <h4>$45</h4>
-                      <p>per day</p>
+                      
                     </div>
                   </div>
                   <div className="models-div__box__descr__name-price__details">
                     <span>
-                      <IconCar /> &nbsp; Audi
+                      Sprinter Minibus
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
+                      16-21 &nbsp; <IconUsers />
                     </span>
                     <span>
-                      <IconCar /> &nbsp; Manual
+                      Automatic
                     </span>
                     <span style={{ textAlign: "right" }}>
                       Diesel &nbsp; <IconCar />
@@ -328,76 +330,32 @@ function Models() {
 
             <div className="models-div__box">
               <div className="models-div__box__img">
-                <img src={CarImg2} alt="car_img" />
-                <div className="models-div__box__descr">
-                  <div className="models-div__box__descr__name-price">
-                    <div className="models-div__box__descr__name-price__name">
-                      <p>Golf 6</p>
-                      <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                      </span>
-                    </div>
-                    <div className="models-div__box__descr__name-price__price">
-                      <h4>$37</h4>
-                      <p>per day</p>
-                    </div>
-                  </div>
-                  <div className="models-div__box__descr__name-price__details">
-                    <span>
-                      <IconCar /> &nbsp; VW
-                    </span>
-                    <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
-                    </span>
-                    <span>
-                      <IconCar /> &nbsp; Manual
-                    </span>
-                    <span style={{ textAlign: "right" }}>
-                      Diesel &nbsp; <IconCar />
-                    </span>
-                  </div>
-                  <div className="models-div__box__descr__name-price__btn">
-                    <Link onClick={() => window.scrollTo(0, 0)} to="/">
-                      Book Ride
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="models-div__box">
-              <div className="models-div__box__img">
-                <img src={CarImg3} alt="car_img" />
+                <img src={CarImg10} alt="car_img" />
                 <div className="models-div__box__descr">
                   <div className="models-div__box__descr__name-price">
                     <div className="models-div__box__descr__name-price__name">
                       <p>Toyota</p>
                       <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
                         <IconStar width={15} height={15} />
                       </span>
                     </div>
                     <div className="models-div__box__descr__name-price__price">
-                      <h4>$30</h4>
-                      <p>per day</p>
+                      
                     </div>
                   </div>
                   <div className="models-div__box__descr__name-price__details">
                     <span>
-                      <IconCar /> &nbsp; Camry
+                      Coaster
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
+                      23-30 &nbsp; <IconUsers />
                     </span>
                     <span>
-                      <IconCar /> &nbsp; Manual
+                      Automatic
                     </span>
                     <span style={{ textAlign: "right" }}>
                       Diesel &nbsp; <IconCar />
@@ -414,119 +372,32 @@ function Models() {
 
             <div className="models-div__box">
               <div className="models-div__box__img">
-                <img src={CarImg4} alt="car_img" />
+                <img src={CarImg11} alt="car_img" />
                 <div className="models-div__box__descr">
                   <div className="models-div__box__descr__name-price">
                     <div className="models-div__box__descr__name-price__name">
-                      <p>BMW 320</p>
+                      <p>Volkswagen</p>
                       <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
                       </span>
                     </div>
                     <div className="models-div__box__descr__name-price__price">
-                      <h4>$35</h4>
-                      <p>per day</p>
+                      
                     </div>
                   </div>
                   <div className="models-div__box__descr__name-price__details">
                     <span>
-                      <IconCar /> &nbsp; ModernLine
+                      Crafter Minibus
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
+                      16-20 &nbsp; <IconUsers />
                     </span>
                     <span>
-                      <IconCar /> &nbsp; Manual
-                    </span>
-                    <span style={{ textAlign: "right" }}>
-                      Diesel &nbsp; <IconCar />
-                    </span>
-                  </div>
-                  <div className="models-div__box__descr__name-price__btn">
-                    <Link onClick={() => window.scrollTo(0, 0)} to="/">
-                      Book Ride
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="models-div__box">
-              <div className="models-div__box__img">
-                <img src={CarImg5} alt="car_img" />
-                <div className="models-div__box__descr">
-                  <div className="models-div__box__descr__name-price">
-                    <div className="models-div__box__descr__name-price__name">
-                      <p>Mercedes</p>
-                      <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                      </span>
-                    </div>
-                    <div className="models-div__box__descr__name-price__price">
-                      <h4>$50</h4>
-                      <p>per day</p>
-                    </div>
-                  </div>
-                  <div className="models-div__box__descr__name-price__details">
-                    <span>
-                      <IconCar /> &nbsp; Benz GLK
-                    </span>
-                    <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
-                    </span>
-                    <span>
-                      <IconCar /> &nbsp; Manual
-                    </span>
-                    <span style={{ textAlign: "right" }}>
-                      Diesel &nbsp; <IconCar />
-                    </span>
-                  </div>
-                  <div className="models-div__box__descr__name-price__btn">
-                    <Link onClick={() => window.scrollTo(0, 0)} to="/">
-                      Book Ride
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="models-div__box">
-              <div className="models-div__box__img">
-                <img src={CarImg6} alt="car_img" />
-                <div className="models-div__box__descr">
-                  <div className="models-div__box__descr__name-price">
-                    <div className="models-div__box__descr__name-price__name">
-                      <p>VW Passat</p>
-                      <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                      </span>
-                    </div>
-                    <div className="models-div__box__descr__name-price__price">
-                      <h4>$25</h4>
-                      <p>per day</p>
-                    </div>
-                  </div>
-                  <div className="models-div__box__descr__name-price__details">
-                    <span>
-                      <IconCar /> &nbsp; ComfortLine
-                    </span>
-                    <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
-                    </span>
-                    <span>
-                      <IconCar /> &nbsp; Manual
+                      Manual
                     </span>
                     <span style={{ textAlign: "right" }}>
                       Diesel &nbsp; <IconCar />
@@ -546,33 +417,32 @@ function Models() {
           <div className="models-div">
             <div className="models-div__box">
               <div className="models-div__box__img">
-                <img src={CarImg1} alt="car_img" />
+                <img src={CarImg8} alt="car_img" />
                 <div className="models-div__box__descr">
                   <div className="models-div__box__descr__name-price">
                     <div className="models-div__box__descr__name-price__name">
-                      <p>Audi A1</p>
+                      <p>Volvo</p>
                       <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
                         <IconStar width={15} height={15} />
                       </span>
                     </div>
                     <div className="models-div__box__descr__name-price__price">
-                      <h4>$45</h4>
-                      <p>per day</p>
+                      
                     </div>
                   </div>
                   <div className="models-div__box__descr__name-price__details">
                     <span>
-                      <IconCar /> &nbsp; Audi
+                      B11R Coach
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
+                      49-53 &nbsp; <IconUsers />
                     </span>
                     <span>
-                      <IconCar /> &nbsp; Manual
+                      Automatic
                     </span>
                     <span style={{ textAlign: "right" }}>
                       Diesel &nbsp; <IconCar />
@@ -589,33 +459,32 @@ function Models() {
 
             <div className="models-div__box">
               <div className="models-div__box__img">
-                <img src={CarImg2} alt="car_img" />
+                <img src={CarImg9} alt="car_img" />
                 <div className="models-div__box__descr">
                   <div className="models-div__box__descr__name-price">
                     <div className="models-div__box__descr__name-price__name">
-                      <p>Golf 6</p>
+                      <p>King Long</p>
                       <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
                         <IconStar width={15} height={15} />
                       </span>
                     </div>
                     <div className="models-div__box__descr__name-price__price">
-                      <h4>$37</h4>
-                      <p>per day</p>
+                      
                     </div>
                   </div>
                   <div className="models-div__box__descr__name-price__details">
                     <span>
-                      <IconCar /> &nbsp; VW
+                      XMQ6129Y
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
+                      45-49 &nbsp; <IconUsers />
                     </span>
                     <span>
-                      <IconCar /> &nbsp; Manual
+                      Manual
                     </span>
                     <span style={{ textAlign: "right" }}>
                       Diesel &nbsp; <IconCar />
@@ -632,162 +501,32 @@ function Models() {
 
             <div className="models-div__box">
               <div className="models-div__box__img">
-                <img src={CarImg3} alt="car_img" />
+                <img src={CarImg12} alt="car_img" />
                 <div className="models-div__box__descr">
                   <div className="models-div__box__descr__name-price">
                     <div className="models-div__box__descr__name-price__name">
-                      <p>Toyota</p>
+                      <p>Bharat Benz</p>
                       <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
                       </span>
                     </div>
                     <div className="models-div__box__descr__name-price__price">
-                      <h4>$30</h4>
-                      <p>per day</p>
+                      
                     </div>
                   </div>
                   <div className="models-div__box__descr__name-price__details">
                     <span>
-                      <IconCar /> &nbsp; Camry
+                      Tourist Coach
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
+                      45 &nbsp; <IconUsers />
                     </span>
                     <span>
-                      <IconCar /> &nbsp; Manual
-                    </span>
-                    <span style={{ textAlign: "right" }}>
-                      Diesel &nbsp; <IconCar />
-                    </span>
-                  </div>
-                  <div className="models-div__box__descr__name-price__btn">
-                    <Link onClick={() => window.scrollTo(0, 0)} to="/">
-                      Book Ride
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="models-div__box">
-              <div className="models-div__box__img">
-                <img src={CarImg4} alt="car_img" />
-                <div className="models-div__box__descr">
-                  <div className="models-div__box__descr__name-price">
-                    <div className="models-div__box__descr__name-price__name">
-                      <p>BMW 320</p>
-                      <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                      </span>
-                    </div>
-                    <div className="models-div__box__descr__name-price__price">
-                      <h4>$35</h4>
-                      <p>per day</p>
-                    </div>
-                  </div>
-                  <div className="models-div__box__descr__name-price__details">
-                    <span>
-                      <IconCar /> &nbsp; ModernLine
-                    </span>
-                    <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
-                    </span>
-                    <span>
-                      <IconCar /> &nbsp; Manual
-                    </span>
-                    <span style={{ textAlign: "right" }}>
-                      Diesel &nbsp; <IconCar />
-                    </span>
-                  </div>
-                  <div className="models-div__box__descr__name-price__btn">
-                    <Link onClick={() => window.scrollTo(0, 0)} to="/">
-                      Book Ride
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="models-div__box">
-              <div className="models-div__box__img">
-                <img src={CarImg5} alt="car_img" />
-                <div className="models-div__box__descr">
-                  <div className="models-div__box__descr__name-price">
-                    <div className="models-div__box__descr__name-price__name">
-                      <p>Mercedes</p>
-                      <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                      </span>
-                    </div>
-                    <div className="models-div__box__descr__name-price__price">
-                      <h4>$50</h4>
-                      <p>per day</p>
-                    </div>
-                  </div>
-                  <div className="models-div__box__descr__name-price__details">
-                    <span>
-                      <IconCar /> &nbsp; Benz GLK
-                    </span>
-                    <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
-                    </span>
-                    <span>
-                      <IconCar /> &nbsp; Manual
-                    </span>
-                    <span style={{ textAlign: "right" }}>
-                      Diesel &nbsp; <IconCar />
-                    </span>
-                  </div>
-                  <div className="models-div__box__descr__name-price__btn">
-                    <Link onClick={() => window.scrollTo(0, 0)} to="/">
-                      Book Ride
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="models-div__box">
-              <div className="models-div__box__img">
-                <img src={CarImg6} alt="car_img" />
-                <div className="models-div__box__descr">
-                  <div className="models-div__box__descr__name-price">
-                    <div className="models-div__box__descr__name-price__name">
-                      <p>VW Passat</p>
-                      <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                      </span>
-                    </div>
-                    <div className="models-div__box__descr__name-price__price">
-                      <h4>$25</h4>
-                      <p>per day</p>
-                    </div>
-                  </div>
-                  <div className="models-div__box__descr__name-price__details">
-                    <span>
-                      <IconCar /> &nbsp; ComfortLine
-                    </span>
-                    <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
-                    </span>
-                    <span>
-                      <IconCar /> &nbsp; Manual
+                      Manual
                     </span>
                     <span style={{ textAlign: "right" }}>
                       Diesel &nbsp; <IconCar />
@@ -807,30 +546,71 @@ function Models() {
           <div className="models-div">
             <div className="models-div__box">
               <div className="models-div__box__img">
-                <img src={CarImg1} alt="car_img" />
+                <img src={CarImg13} alt="car_img" />
                 <div className="models-div__box__descr">
                   <div className="models-div__box__descr__name-price">
                     <div className="models-div__box__descr__name-price__name">
-                      <p>Audi A1</p>
+                      <p>Yutong</p>
                       <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
                         <IconStar width={15} height={15} />
                       </span>
                     </div>
                     <div className="models-div__box__descr__name-price__price">
-                      <h4>$45</h4>
-                      <p>per day</p>
+                      
                     </div>
                   </div>
                   <div className="models-div__box__descr__name-price__details">
                     <span>
-                      <IconCar /> &nbsp; Audi
+                        ZK6129H
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
+                      49-55 &nbsp; <IconUsers />
+                    </span>
+                    <span>
+                      Manual
+                    </span>
+                    <span style={{ textAlign: "right" }}>
+                      Diesel &nbsp; <IconCar />
+                    </span>
+                  </div>
+                  <div className="models-div__box__descr__name-price__btn">
+                    <Link onClick={() => window.scrollTo(0, 0)} to="/">
+                      Book Ride
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="models-div__box">
+              <div className="models-div__box__img">
+                <img src={CarImg14} alt="car_img" />
+                <div className="models-div__box__descr">
+                  <div className="models-div__box__descr__name-price">
+                    <div className="models-div__box__descr__name-price__name">
+                      <p>Tata Starbus</p>
+                      <span>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                      </span>
+                    </div>
+                    <div className="models-div__box__descr__name-price__price">
+                      
+                    </div>
+                  </div>
+                  <div className="models-div__box__descr__name-price__details">
+                    <span>
+                      Ultra
+                    </span>
+                    <span style={{ textAlign: "right" }}>
+                      34-46 &nbsp; <IconUsers />
                     </span>
                     <span>
                       <IconCar /> &nbsp; Manual
@@ -850,202 +630,29 @@ function Models() {
 
             <div className="models-div__box">
               <div className="models-div__box__img">
-                <img src={CarImg2} alt="car_img" />
+                <img src={CarImg15} alt="car_img" />
                 <div className="models-div__box__descr">
                   <div className="models-div__box__descr__name-price">
                     <div className="models-div__box__descr__name-price__name">
-                      <p>Golf 6</p>
+                      <p>Golden Dragon</p>
                       <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
+                        <IconStar width={15} height={15} fill="#ffc107" stroke="#ffc107"/>
                         <IconStar width={15} height={15} />
                       </span>
                     </div>
                     <div className="models-div__box__descr__name-price__price">
-                      <h4>$37</h4>
-                      <p>per day</p>
+                      
                     </div>
                   </div>
                   <div className="models-div__box__descr__name-price__details">
                     <span>
-                      <IconCar /> &nbsp; VW
+                      ML6125
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
-                    </span>
-                    <span>
-                      <IconCar /> &nbsp; Manual
-                    </span>
-                    <span style={{ textAlign: "right" }}>
-                      Diesel &nbsp; <IconCar />
-                    </span>
-                  </div>
-                  <div className="models-div__box__descr__name-price__btn">
-                    <Link onClick={() => window.scrollTo(0, 0)} to="/">
-                      Book Ride
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="models-div__box">
-              <div className="models-div__box__img">
-                <img src={CarImg3} alt="car_img" />
-                <div className="models-div__box__descr">
-                  <div className="models-div__box__descr__name-price">
-                    <div className="models-div__box__descr__name-price__name">
-                      <p>Toyota</p>
-                      <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                      </span>
-                    </div>
-                    <div className="models-div__box__descr__name-price__price">
-                      <h4>$30</h4>
-                      <p>per day</p>
-                    </div>
-                  </div>
-                  <div className="models-div__box__descr__name-price__details">
-                    <span>
-                      <IconCar /> &nbsp; Camry
-                    </span>
-                    <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
-                    </span>
-                    <span>
-                      <IconCar /> &nbsp; Manual
-                    </span>
-                    <span style={{ textAlign: "right" }}>
-                      Diesel &nbsp; <IconCar />
-                    </span>
-                  </div>
-                  <div className="models-div__box__descr__name-price__btn">
-                    <Link onClick={() => window.scrollTo(0, 0)} to="/">
-                      Book Ride
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="models-div__box">
-              <div className="models-div__box__img">
-                <img src={CarImg4} alt="car_img" />
-                <div className="models-div__box__descr">
-                  <div className="models-div__box__descr__name-price">
-                    <div className="models-div__box__descr__name-price__name">
-                      <p>BMW 320</p>
-                      <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                      </span>
-                    </div>
-                    <div className="models-div__box__descr__name-price__price">
-                      <h4>$35</h4>
-                      <p>per day</p>
-                    </div>
-                  </div>
-                  <div className="models-div__box__descr__name-price__details">
-                    <span>
-                      <IconCar /> &nbsp; ModernLine
-                    </span>
-                    <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
-                    </span>
-                    <span>
-                      <IconCar /> &nbsp; Manual
-                    </span>
-                    <span style={{ textAlign: "right" }}>
-                      Diesel &nbsp; <IconCar />
-                    </span>
-                  </div>
-                  <div className="models-div__box__descr__name-price__btn">
-                    <Link onClick={() => window.scrollTo(0, 0)} to="/">
-                      Book Ride
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="models-div__box">
-              <div className="models-div__box__img">
-                <img src={CarImg5} alt="car_img" />
-                <div className="models-div__box__descr">
-                  <div className="models-div__box__descr__name-price">
-                    <div className="models-div__box__descr__name-price__name">
-                      <p>Mercedes</p>
-                      <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                      </span>
-                    </div>
-                    <div className="models-div__box__descr__name-price__price">
-                      <h4>$50</h4>
-                      <p>per day</p>
-                    </div>
-                  </div>
-                  <div className="models-div__box__descr__name-price__details">
-                    <span>
-                      <IconCar /> &nbsp; Benz GLK
-                    </span>
-                    <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
-                    </span>
-                    <span>
-                      <IconCar /> &nbsp; Manual
-                    </span>
-                    <span style={{ textAlign: "right" }}>
-                      Diesel &nbsp; <IconCar />
-                    </span>
-                  </div>
-                  <div className="models-div__box__descr__name-price__btn">
-                    <Link onClick={() => window.scrollTo(0, 0)} to="/">
-                      Book Ride
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="models-div__box">
-              <div className="models-div__box__img">
-                <img src={CarImg6} alt="car_img" />
-                <div className="models-div__box__descr">
-                  <div className="models-div__box__descr__name-price">
-                    <div className="models-div__box__descr__name-price__name">
-                      <p>VW Passat</p>
-                      <span>
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                        <IconStar width={15} height={15} />
-                      </span>
-                    </div>
-                    <div className="models-div__box__descr__name-price__price">
-                      <h4>$25</h4>
-                      <p>per day</p>
-                    </div>
-                  </div>
-                  <div className="models-div__box__descr__name-price__details">
-                    <span>
-                      <IconCar /> &nbsp; ComfortLine
-                    </span>
-                    <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <IconCar />
+                      49-55 &nbsp; <IconUsers />
                     </span>
                     <span>
                       <IconCar /> &nbsp; Manual
