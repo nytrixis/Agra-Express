@@ -2479,6 +2479,24 @@ button {
   box-shadow: 0 0 0 2px rgba(255, 77, 48, 0.2);
 }
 
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar__links .active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #d43242;
+}
+
 /* .loadingp p {
   margin-top: 10px;
   color: #706f7b;

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Logo from "../images/logo/logo.png";
 import { useState } from "react";
 import { IconMenu2, IconX } from "@tabler/icons-react";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -52,49 +53,41 @@ function Navbar() {
 
         <div className="navbar">
           <div className="navbar__img">
-            <Link to="/" onClick={() => window.scrollTo(0, 0)}>
+            <NavLink to="/" onClick={() => window.scrollTo(0, 0)}>
               <img src={Logo} alt="logo-img" />
-            </Link>
+            </NavLink>
           </div>
           <ul className="navbar__links">
             <li>
-              <Link className="home-link" to="/">
+              <NavLink className="home-link" to="/">
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
               {" "}
-              <Link className="about-link" to="/about">
+              <NavLink className="about-link" to="/about">
                 About
-              </Link>
+              </NavLink>
             </li>
             <li>
               {" "}
-              <Link className="models-link" to="/models">
+              <NavLink className="models-link" to="/models">
                 Car models
-              </Link>
+              </NavLink>
             </li>
             <li>
               {" "}
-              <Link className="testi-link" to="/coaches">
+              <NavLink className="testi-link" to="/coaches">
                 Coach models
-              </Link>
+              </NavLink>
             </li>
             <li>
               {" "}
-              <Link className="contact-link" to="/contact">
+              <NavLink className="contact-link" to="/contact">
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
-          <div className="navbar__buttons">
-            <Link className="navbar__buttons__sign-in" to="/">
-              Sign In
-            </Link>
-            <Link className="navbar__buttons__register" to="/">
-              Register
-            </Link>
-          </div>
 
           {/* mobile */}
           <div className="mobile-hamb" onClick={openNav}>
