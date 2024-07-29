@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import React from "react";
+import {useEffect, useState } from "react";
 import CarAudi from "../images/cars-big/audia1.jpg";
 import CarGolf from "../images/cars-big/golf6.jpg";
 import CarToyota from "../images/cars-big/toyotacamry.jpg";
@@ -8,7 +9,6 @@ import CarPassat from "../images/cars-big/passatcc.jpg";
 import { IconCar, IconInfoCircleFilled, IconX } from "@tabler/icons-react";
 import { IconMapPinFilled } from "@tabler/icons-react";
 import { IconCalendarEvent } from "@tabler/icons-react";
-import React from "react";
 
 function BookCar() {
   const [modal, setModal] = useState(false); //  class - active-modal
@@ -20,6 +20,9 @@ function BookCar() {
   const [pickTime, setPickTime] = useState("");
   const [dropTime, setDropTime] = useState("");
   const [carImg, setCarImg] = useState("");
+  const [vehicleSubtype, setVehicleSubtype] = useState("");
+  const [vehicleModel, setVehicleModel] = useState("");
+
 
   // modal infos
   const [name, setName] = useState("");
@@ -32,6 +35,26 @@ function BookCar() {
   const [zipcode, setZipCode] = useState("");
 
   // taking value of modal inputs
+  const handleVehicleModel = (e) => {
+    setVehicleModel(e.target.value);
+  };
+
+  const vehicleModels = {
+    Economy: ["Toyota Sienna", "Toyota Prius", "Maruti Suzuki Swift Dzire", "Hyundai Tucson", "Toyota Corolla", "Volkswagen E Golf"],
+    Luxury: ["Skoda Superb", "Mercedez benz S Class", "Audi A8 L", "BMW 320 Modernline", "Mercedez Benz GLK", "VW Passat ComfortLine"],
+    Premium: ["TBMW 3 Series", "BMW 5 Series", "BMW 5 Series Touring", "Mercedez Benz CLA Class", "Mercedez Benz Cabriolet", "VW Passat Comfortline"],
+    SUVMUV: ["Honda Amaze", "Honda BR-V", "Honda CR-V", "Maruti Suzuki Alto K10", "Maruti Suzuki Vitara Brezza", "Toyota Innova Crysta"],
+    MiniVan: ["Volkswagen Crafter", "Toyota HiAce", "Mercedez Benz Sprinter", "Mercedez Benz Experience Explorers", "Nissan Urvan", "Mercedez Benz S Class"],
+    MiniCoach: ["Mercedes Benz Sprinter Minibus", "Toyota Coaster", "Volkswagen Crafter Minibus"],
+    LargeCoach: ["Volvo B11R", "King Long XMQ6129Y", "Bharat Benz Tourist Coach"],
+    LuxuryCoach: ["Yutong ZK6129H", "Tata Starbus Ultra", "Golden Dragon ML6125"]
+  };
+  
+  
+  const handleVehicleSubtype = (e) => {
+    setVehicleSubtype(e.target.value);
+  };
+  
   const handleName = (e) => {
     setName(e.target.value);
   };
@@ -64,6 +87,26 @@ function BookCar() {
     setZipCode(e.target.value);
   };
 
+  const collectFormData = () => {
+    return {
+      vehicleType: carType,
+      vehicleSubtype,
+      vehicleModel,
+      pickUp,
+      dropOff,
+      pickTime,
+      dropTime,
+      name,
+      lastName,
+      phone,
+      age,
+      email,
+      address,
+      city,
+      zipcode
+    };
+  };  
+
   // open modal when all inputs are fulfilled
   const openModal = (e) => {
     e.preventDefault();
@@ -94,12 +137,36 @@ function BookCar() {
   }, [modal]);
 
   // confirm modal booking
-  const confirmBooking = (e) => {
+  const confirmBooking = async (e) => {
     e.preventDefault();
-    setModal(!modal);
-    const doneMsg = document.querySelector(".booking-done");
-    doneMsg.style.display = "flex";
+    const formData = collectFormData();
+  
+    try {
+      const response = await fetch('http://localhost:5000/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          to: 'savarniknandinee2416@gmail.com',
+          subject: 'New Vehicle Booking',
+          formData
+        }),
+      });
+  
+      if (response.ok) {
+        setModal(false);
+        const doneMsg = document.querySelector(".booking-done");
+        doneMsg.style.display = "flex";
+      } else {
+        throw new Error('Failed to send email');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Failed to send booking details. Please try again.');
+    }
   };
+  
 
   // taking value of booking inputs
   const handleCar = (e) => {
@@ -166,7 +233,7 @@ function BookCar() {
         <div className="container">
           <div className="book-content">
             <div className="book-content__box">
-              <h2>Book a car</h2>
+              <h2>Book a Vehicle</h2>
 
               <p className="error-message">
                 All fields required! <IconX width={20} height={20} />
@@ -180,21 +247,58 @@ function BookCar() {
               <form className="box-form">
                 <div className="box-form__car-type">
                   <label>
-                    <IconCar className="input-icon" /> &nbsp; Select Your Car
+                    <IconCar className="input-icon" /> &nbsp; Select Your Vehicle
                     Type <b>*</b>
                   </label>
                   <select value={carType} onChange={handleCar}>
-                    <option>Select your car type</option>
-                    <option value="Audi A1 S-Line">Audi A1 S-Line</option>
-                    <option value="VW Golf 6">VW Golf 6</option>
-                    <option value="Toyota Camry">Toyota Camry</option>
-                    <option value="BMW 320 ModernLine">
-                      BMW 320 ModernLine
-                    </option>
-                    <option value="Mercedes-Benz GLK">Mercedes-Benz GLK</option>
-                    <option value="VW Passat CC">VW Passat CC</option>
+                    <option>Select your Vehicle type</option>
+                    <option value="Car">Car</option>
+                    <option value="Coach">Coach</option>
                   </select>
                 </div>
+
+                {carType && (
+                  <div className="box-form__car-type">
+                    <label>
+                      <IconCar className="input-icon" /> &nbsp; Select Vehicle Subtype <b>*</b>
+                    </label>
+                    <select value={vehicleSubtype} onChange={handleVehicleSubtype}>
+                      <option>Select vehicle subtype</option>
+                        {carType === "Car" ? (
+                          <>
+                          <option value="Economy">Economy cars</option>
+                          <option value="Luxury">Luxury cars</option>
+                          <option value="Premium">Premium cars</option>
+                          <option value="SUVMUV">SUV/MUV cars</option>
+                        </>
+                      ) : (
+                        <>
+                        <option value="MiniVan">Mini vans</option>
+                        <option value="MiniCoach">Mini coaches</option>
+                        <option value="LargeCoach">Large coaches</option>
+                        <option value="LuxuryCoach">Luxury coaches</option>
+                      </>
+                    )}
+                  </select>
+                </div>
+                )}
+
+                {vehicleSubtype && (
+                  <div className="box-form__car-type">
+                    <label>
+                      <IconCar className="input-icon" /> &nbsp; Select {carType} Model <b>*</b>
+                    </label>
+                  <select value={vehicleModel} onChange={handleVehicleModel}>
+                    <option>Select {carType.toLowerCase()} model</option>
+                    {vehicleModels[vehicleSubtype].map((model, index) => (
+                      <option key={index} value={model}>
+                        {model}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                )}
+
 
                 <div className="box-form__car-type">
                   <label>
@@ -276,8 +380,7 @@ function BookCar() {
             you will receive:
           </h4>
           <p>
-            Your rental voucher to produce on arrival at the rental desk and a
-            toll-free customer support number.
+            A booking comfirmation mail at your e-mail address, our team will get in touch with you soon.
           </p>
         </div>
         {/* car info */}
@@ -332,9 +435,8 @@ function BookCar() {
           </div>
           <div className="booking-modal__car-info__model">
             <h5>
-              <span>Car -</span> {carType}
+              <span>Vehicle -</span> {vehicleModel}
             </h5>
-            {imgUrl && <img src={imgUrl} alt="car_img" />}
           </div>
         </div>
         {/* personal info */}
