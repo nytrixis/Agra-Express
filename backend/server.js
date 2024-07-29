@@ -40,21 +40,16 @@ app.post('/send-email', (req, res) => {
   };
 
 
-  const adminMailOptions = {
+  const mailOptions = {
     from: process.env.EMAIL_USER,
     to: to,
     subject: subject,
-    text: formatEmailContent(formData)
+    text: subject.includes('New Vehicle Booking') 
+      ? formatEmailContent(formData)
+      : `Dear ${formData.name},\n\nThank you for your booking. Here are your details:\n\n${formatEmailContent(formData)} \nOur team will get in touch with you soon.\n\n If you have any questions, please don't hesitate to reach out to us. \n\n\nBest regards,\nAgra Express Team.`
   };
 
-  const customerMailOptions = {
-    from: process.env.EMAIL_USER,
-    to: to,
-    subject: "Your Booking Confirmation E-mail",
-    text: `Dear ${formData.name},\n\nThank you for your booking. Here are your details:\n\n${formatEmailContent(formData)} \nOur team will get in touch with you soon.\n\n If you have any questions, please don't hesitate to reach out to us. \n\n\nBest regards,\nAgra Express Team.`
-  };
-
-  transporter.sendMail(adminMailOptions, (error, info) => {
+  transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.log(error);
       res.status(500).send('Error sending email to admin');

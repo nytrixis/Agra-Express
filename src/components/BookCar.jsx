@@ -207,7 +207,6 @@ function BookCar() {
   // taking value of booking inputs
   const handleCar = (e) => {
     setCarType(e.target.value);
-    setCarImg(e.target.value);
   };
 
   const handlePickTime = (e) => {
