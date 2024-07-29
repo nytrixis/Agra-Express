@@ -6,7 +6,6 @@ import Navbar from "../src/components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Models from "./Pages/Models";
 import Coaches from "./Pages/Coaches";
-import TestimonialsPage from "./Pages/TestimonialsPage";
 import Contact from "./Pages/Contact";
 import LoadingPage from "./components/LoadingPage";
 
@@ -31,7 +30,6 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="models" element={<Models />} />
         <Route path="coaches" element={<Coaches />} />
-        <Route path="testimonials" element={<TestimonialsPage />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
     </>

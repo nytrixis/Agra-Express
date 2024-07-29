@@ -1,9 +1,5 @@
 import React from "react";
 import Footer from "../components/Footer";
-import HeroPages from "../components/HeroPages";
-import CarImg1 from "../images/cars-big/audi-box.png";
-import CarImg2 from "../images/cars-big/golf6-box.png";
-import CarImg3 from "../images/cars-big/toyota-box.png";
 import CarImg4 from "../images/cars-big/bmw-box.png";
 import CarImg5 from "../images/cars-big/benz-box.png";
 import CarImg6 from "../images/cars-big/passat-box.png";
@@ -30,7 +26,7 @@ import CarImg27 from "../images/cars-big/stoyotainnovacrysta.jpg";
 
 
 import { Link } from "react-router-dom";
-import { IconCar, IconPhone, IconStar } from "@tabler/icons-react";
+import { IconCar, IconStar } from "@tabler/icons-react";
 
 function Models() {
   return (

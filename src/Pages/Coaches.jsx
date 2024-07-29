@@ -1,6 +1,5 @@
 import React from "react";
 import Footer from "../components/Footer";
-import HeroPages from "../components/HeroPages";
 import CarImg1 from "../images/cars-big/mvolkswagencrafter.jpg";
 import CarImg2 from "../images/cars-big/mtoyotahiAce.jpg";
 import CarImg3 from "../images/cars-big/mmercedezbenzsprinter.jpg";
@@ -17,7 +16,7 @@ import CarImg13 from "../images/cars-big/eyutong.jpg";
 import CarImg14 from "../images/cars-big/etatastarbusultra.jpg";
 import CarImg15 from "../images/cars-big/egoldendragon.jpg";
 import { Link } from "react-router-dom";
-import { IconCar, IconPhone, IconStar, IconUsers } from "@tabler/icons-react";
+import { IconCar, IconStar, IconUsers } from "@tabler/icons-react";
 
 function Models() {
   return (

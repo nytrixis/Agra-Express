@@ -56,7 +56,7 @@ function Footer() {
             <ul className="footer-content__2">
               <li>Working Hours</li>
               <li>
-                <a href="#" className="contact-item">
+                <a href="#home" className="contact-item">
                   <IconMapPin />WTI Hotels & Resorts 84, Mahipalpur, Vasantkunj Road, Near IGI Airport, New Delhi -110037
                 </a>
               </li>

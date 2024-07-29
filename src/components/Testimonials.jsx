@@ -1,7 +1,5 @@
 import React from "react";
 import { IconQuote } from "@tabler/icons-react";
-import Img2 from "../images/testimonials/pfp1.jpg";
-import Img3 from "../images/testimonials/pfp2.jpg";
 
 function Testimonials() {
   return (

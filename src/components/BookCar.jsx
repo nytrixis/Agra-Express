@@ -1,11 +1,5 @@
 import React from "react";
 import {useEffect, useState } from "react";
-import CarAudi from "../images/cars-big/audia1.jpg";
-import CarGolf from "../images/cars-big/golf6.jpg";
-import CarToyota from "../images/cars-big/toyotacamry.jpg";
-import CarBmw from "../images/cars-big/bmw320.jpg";
-import CarMercedes from "../images/cars-big/benz.jpg";
-import CarPassat from "../images/cars-big/passatcc.jpg";
 import { IconCar, IconInfoCircleFilled, IconX } from "@tabler/icons-react";
 import { IconMapPinFilled } from "@tabler/icons-react";
 import { IconCalendarEvent } from "@tabler/icons-react";
@@ -42,7 +36,7 @@ function BookCar() {
   const [dropOff, setDropOff] = useState("");
   const [pickTime, setPickTime] = useState("");
   const [dropTime, setDropTime] = useState("");
-  const [carImg, setCarImg] = useState("");
+  const [setCarImg] = useState("");
   const [vehicleSubtype, setVehicleSubtype] = useState("");
   const [vehicleModel, setVehicleModel] = useState("");
   const [filteredPickUpCities, setFilteredPickUpCities] = useState([]);
@@ -200,14 +194,6 @@ function BookCar() {
     setCarImg(e.target.value);
   };
 
-  const handlePick = (e) => {
-    setPickUp(e.target.value);
-  };
-
-  const handleDrop = (e) => {
-    setDropOff(e.target.value);
-  };
-
   const handlePickTime = (e) => {
     setPickTime(e.target.value);
   };
@@ -216,30 +202,7 @@ function BookCar() {
     setDropTime(e.target.value);
   };
 
-  // based on value name show car img
-  let imgUrl;
-  switch (carImg) {
-    case "Audi A1 S-Line":
-      imgUrl = CarAudi;
-      break;
-    case "VW Golf 6":
-      imgUrl = CarGolf;
-      break;
-    case "Toyota Camry":
-      imgUrl = CarToyota;
-      break;
-    case "BMW 320 ModernLine":
-      imgUrl = CarBmw;
-      break;
-    case "Mercedes-Benz GLK":
-      imgUrl = CarMercedes;
-      break;
-    case "VW Passat CC":
-      imgUrl = CarPassat;
-      break;
-    default:
-      imgUrl = "";
-  }
+  
 
   // hide message
   const hideMessage = () => {
