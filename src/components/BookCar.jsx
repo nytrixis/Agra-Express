@@ -13,6 +13,29 @@ import { IconCalendarEvent } from "@tabler/icons-react";
 function BookCar() {
   const [modal, setModal] = useState(false); //  class - active-modal
 
+  const indianCities = [
+    "Mumbai", "Delhi", "Bangalore", "Hyderabad", "Chennai", "Kolkata", 
+    "Pune", "Ahmedabad", "Jaipur", "Lucknow", "Kanpur", "Nagpur", 
+    "Indore", "Thane", "Bhopal", "Visakhapatnam", "Pimpri-Chinchwad", 
+    "Patna", "Vadodara", "Ghaziabad", "Ludhiana", "Agra", "Nashik", 
+    "Faridabad", "Meerut", "Rajkot", "Kalyan-Dombivli", "Vasai-Virar", 
+    "Varanasi", "Srinagar", "Aurangabad", "Dhanbad", "Amritsar", 
+    "Navi Mumbai", "Allahabad", "Ranchi", "Howrah", "Coimbatore", 
+    "Jabalpur", "Gwalior", "Vijayawada", "Jodhpur", "Madurai", "Raipur", 
+    "Kota", "Guwahati", "Chandigarh", "Solapur", "Hubballi-Dharwad", 
+    "Tiruchirappalli", "Bareilly", "Mysore", "Tiruppur", "Gurgaon", 
+    "Aligarh", "Jalandhar", "Bhubaneswar", "Salem", "Mira-Bhayandar", 
+    "Warangal", "Thiruvananthapuram", "Guntur", "Bhiwandi", "Saharanpur", 
+    "Gorakhpur", "Bikaner", "Amravati", "Noida", "Jamshedpur", "Bhilai", 
+    "Cuttack", "Firozabad", "Kochi", "Nellore", "Bhavnagar", "Dehradun", 
+    "Durgapur", "Asansol", "Rourkela", "Nanded", "Kolhapur", "Ajmer", 
+    "Akola", "Gulbarga", "Jamnagar", "Ujjain", "Loni", "Siliguri", 
+    "Jhansi", "Ulhasnagar", "Jammu", "Sangli-Miraj & Kupwad", "Mangalore", 
+    "Erode", "Belgaum", "Ambattur", "Tirunelveli", "Malegaon", "Gaya", 
+    "Jalgaon", "Udaipur", "Maheshtala"
+  ];
+  
+
   // booking car
   const [carType, setCarType] = useState("");
   const [pickUp, setPickUp] = useState("");
@@ -22,6 +45,9 @@ function BookCar() {
   const [carImg, setCarImg] = useState("");
   const [vehicleSubtype, setVehicleSubtype] = useState("");
   const [vehicleModel, setVehicleModel] = useState("");
+  const [filteredPickUpCities, setFilteredPickUpCities] = useState([]);
+  const [filteredDropOffCities, setFilteredDropOffCities] = useState([]);
+
 
 
   // modal infos
@@ -305,29 +331,61 @@ function BookCar() {
                     <IconMapPinFilled className="input-icon" /> &nbsp; Pick-up{" "}
                     <b>*</b>
                   </label>
-                  <select value={pickUp} onChange={handlePick}>
-                    <option>Select pick up location</option>
-                    <option>Belgrade</option>
-                    <option>Novi Sad</option>
-                    <option>Nis</option>
-                    <option>Kragujevac</option>
-                    <option>Subotica</option>
-                  </select>
+                  <input
+                    type="text"
+                    value={pickUp}
+                    onChange={(e) => {
+                      setPickUp(e.target.value);
+                      const filtered = indianCities.filter(city => 
+                        city.toLowerCase().startsWith(e.target.value.toLowerCase())
+                      );
+                      setFilteredPickUpCities(filtered);
+                    }}
+                    placeholder="Start typing a pick-up city name"
+                  />
+                  {filteredPickUpCities.length > 0 && (
+                    <ul className="city-dropdown">
+                      {filteredPickUpCities.map((city, index) => (
+                      <li key={index} onClick={() => {
+                        setPickUp(city);
+                        setFilteredPickUpCities([]);
+                      }}>
+                        {city}
+                      </li>
+                    ))}
+                </ul>
+                )}
                 </div>
 
                 <div className="box-form__car-type">
                   <label>
-                    <IconMapPinFilled className="input-icon" /> &nbsp; Drop-of{" "}
+                    <IconMapPinFilled className="input-icon" /> &nbsp; Drop-off{" "}
                     <b>*</b>
                   </label>
-                  <select value={dropOff} onChange={handleDrop}>
-                    <option>Select drop off location</option>
-                    <option>Novi Sad</option>
-                    <option>Belgrade</option>
-                    <option>Nis</option>
-                    <option>Kragujevac</option>
-                    <option>Subotica</option>
-                  </select>
+                  <input
+                    type="text"
+                    value={dropOff}
+                    onChange={(e) => {
+                      setDropOff(e.target.value);
+                      const filtered = indianCities.filter(city => 
+                        city.toLowerCase().startsWith(e.target.value.toLowerCase())
+                      );
+                      setFilteredDropOffCities(filtered);
+                    }}
+                    placeholder="Start typing a drop-off city name"
+                  />
+                  {filteredDropOffCities.length > 0 && (
+                    <ul className="city-dropdown">
+                      {filteredDropOffCities.map((city, index) => (
+                      <li key={index} onClick={() => {
+                        setDropOff(city);
+                        setFilteredDropOffCities([]);
+                      }}>
+                        {city}
+                      </li>
+                    ))}
+                </ul>
+                )}
                 </div>
 
                 <div className="box-form__car-time">

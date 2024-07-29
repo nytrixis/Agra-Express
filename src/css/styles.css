@@ -2433,6 +2433,52 @@ button {
   font-size: 4rem;
 }
 
+.box-form__car-type {
+  position: relative;
+}
+
+.city-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  font-size: 15px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.city-dropdown li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.city-dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+.box-form__car-type input {
+  width: 100%;
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.box-form__car-type input:focus {
+  outline: none;
+  border-color: #d43242;
+  box-shadow: 0 0 0 2px rgba(255, 77, 48, 0.2);
+}
+
 /* .loadingp p {
   margin-top: 10px;
   color: #706f7b;
