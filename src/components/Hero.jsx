@@ -93,7 +93,8 @@ function Hero() {
                 >
                   Book Ride &nbsp; <IconCircleCheck />
                 </Link>
-                <Link className="hero-content__text__btns__learn-more btn-align" to="/">
+                <Link 
+                className="hero-content__text__btns__learn-more btn-align" to="/models">
                   Discover &nbsp; <IconChevronRight />
                 </Link>
               </div>
