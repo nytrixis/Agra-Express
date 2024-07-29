@@ -160,6 +160,18 @@ function BookCar() {
   const confirmBooking = async (e) => {
     e.preventDefault();
     const formData = collectFormData();
+
+    const adminEmail = {
+      to: 'savarniknandinee2416@gmail.com',
+      subject: 'New Vehicle Booking',
+      formData
+    };
+    
+    const userEmail = {
+      to: formData.email,
+      subject: 'Your Booking Confirmation',
+      formData
+    };
   
     try {
       const response = await fetch('http://localhost:5000/send-email', {
@@ -167,19 +179,23 @@ function BookCar() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          to: 'savarniknandinee2416@gmail.com',
-          subject: 'New Vehicle Booking',
-          formData
-        }),
+        body: JSON.stringify(adminEmail),
+      });
+
+      const userResponse = await fetch('http://localhost:5000/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(userEmail),
       });
   
-      if (response.ok) {
+      if (adminResponse.ok && userResponse.ok) {
         setModal(false);
         const doneMsg = document.querySelector(".booking-done");
         doneMsg.style.display = "flex";
       } else {
-        throw new Error('Failed to send email');
+        throw new Error('Failed to send one or both emails');
       }
     } catch (error) {
       console.error('Error:', error);
