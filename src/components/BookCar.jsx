@@ -36,7 +36,6 @@ function BookCar() {
   const [dropOff, setDropOff] = useState("");
   const [pickTime, setPickTime] = useState("");
   const [dropTime, setDropTime] = useState("");
-  const [setCarImg] = useState("");
   const [vehicleSubtype, setVehicleSubtype] = useState("");
   const [vehicleModel, setVehicleModel] = useState("");
   const [filteredPickUpCities, setFilteredPickUpCities] = useState([]);
