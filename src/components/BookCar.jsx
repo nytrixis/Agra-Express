@@ -173,7 +173,7 @@ function BookCar() {
     };
   
     try {
-      const adminResponse = await fetch('http://localhost:5000/send-email', {
+      const adminResponse = await fetch('https://agra-express.onrender.com/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -181,7 +181,7 @@ function BookCar() {
         body: JSON.stringify(adminEmail),
       });
 
-      const userResponse = await fetch('http://localhost:5000/send-email', {
+      const userResponse = await fetch('https://agra-express.onrender.com/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
