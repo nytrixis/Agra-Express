@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5000;
 const app = express();
 
 const corsOptions = {
-  origin: true,
+  origin: process.env.CORS_ORIGIN,
   methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Access-Control-Allow-Origin', 'Authorization'],
   credentials: true
