@@ -10,7 +10,7 @@ const app = express();
 const corsOptions = {
   origin: 'https://master--agraexpress.netlify.app',
   methods: ['GET', 'POST', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Access-Control-Allow-Origin'],
+  allowedHeaders: ['Content-Type', 'Access-Control-Allow-Origin', 'Authorization'],
   credentials: true
 };
 
