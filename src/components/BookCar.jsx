@@ -179,7 +179,8 @@ function BookCar() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(adminEmail),
-        credentials: 'include'
+        credentials: 'include',
+        mode: 'cors'
       });
 
       const userResponse = await fetch('https://agra-express.onrender.com/send-email', {
@@ -188,7 +189,8 @@ function BookCar() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(userEmail),
-        credentials: 'include'
+        credentials: 'include',
+        mode: 'cors'
       });
   
       if (adminResponse.ok && userResponse.ok) {
