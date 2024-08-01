@@ -74,17 +74,18 @@ app.post('/send-email', (req, res) => {
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.log(error);
-      res.status(500).send('Error sending email to admin');
+      res.status(500).json({ status: 'error', message: 'Error sending email to admin' });
     } else {
       console.log('Email sent to admin: ' + info.response);
-      res.status(200).send('Email sent successfully');
+      res.status(200).json({ status: 'success', message: 'Email sent successfully to customer' });
 
       transporter.sendMail(customerMailOptions, (error, info) => {
         if (error) {
           console.log(error);
-          res.status(500).send('Error sending mail to customer');
+          res.status(500).json({ status: 'error', message: 'Error sending email' });
         } else {
           console.log('Email sent to customer: ' + info.response);
+          res.status(200).json({ status: 'success', message: 'Email sent successfully to customer' });
         }
       });
     }
