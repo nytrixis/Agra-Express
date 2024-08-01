@@ -9,13 +9,16 @@ const app = express();
 
 const corsOptions = {
   origin: 'https://master--agraexpress.netlify.app',
-  methods: ['GET', 'POST'],
+  methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type'],
   credentials: true
 };
 
 app.use(cors(corsOptions));
 app.use(express.json());
+
+// Handle preflight requests
+app.options('*', cors(corsOptions));
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -49,12 +52,11 @@ app.post('/send-email', (req, res) => {
     `;
   };
 
-
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: to,
     subject: subject,
-    text: subject.includes('New Vehicle Booking') 
+    text: subject.includes('New Vehicle Booking')
       ? formatEmailContent(formData)
       : `Dear ${formData.name},\n\nThank you for your booking. Here are your details:\n\n${formatEmailContent(formData)} \nOur team will get in touch with you soon.\n\n If you have any questions, please don't hesitate to reach out to us. \n\n\nBest regards,\nAgra Express Team.`
   };
@@ -69,15 +71,14 @@ app.post('/send-email', (req, res) => {
 
       transporter.sendMail(customerMailOptions, (error, info) => {
         if (error) {
-            console.log(error);
-            res.status(500).send('Error sending mail to customer');
+          console.log(error);
+          res.status(500).send('Error sending mail to customer');
         } else {
-            console.log('Email sent to customer: ' +info.response);
+          console.log('Email sent to customer: ' + info.response);
         }
       });
     }
   });
 });
-
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
